@@ -1,0 +1,486 @@
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: #eeeeee;
+    color: #080808;
+}
+
+/* Ukuran halaman desktop */
+.resume {
+    position: relative;
+    width: 1024px;
+    min-height: 1448px;
+    margin: 20px auto;
+    overflow: hidden;
+    background: #ffffff;
+}
+
+/* Background bagian atas */
+.top-shape {
+    position: absolute;
+    top: -80px;
+    left: -65px;
+    width: 965px;
+    height: 300px;
+    background: #555555;
+    border-radius: 0 115px 115px 0;
+    z-index: 0;
+}
+
+/* Header dan foto profil */
+.hero {
+    position: relative;
+    height: 345px;
+    z-index: 1;
+}
+
+.portrait {
+    position: absolute;
+    top: 48px;
+    left: 62px;
+    width: 307px;
+    height: 287px;
+    padding: 9px;
+    background: white;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.portrait img {
+    width: 100%;
+    height: 100%;
+    display: block;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 50%;
+}
+
+.hero-title {
+    position: absolute;
+    top: 76px;
+    left: 390px;
+    width: 520px;
+    text-align: center;
+    color: white;
+}
+
+.hero-title h1 {
+    font-size: 46px;
+    font-weight: 800;
+    letter-spacing: -1.5px;
+    white-space: nowrap;
+}
+
+.hero-title p {
+    margin-top: 2px;
+    font-size: 27px;
+    font-weight: 400;
+    letter-spacing: 6px;
+}
+
+/* Kolom kiri */
+.sidebar {
+    position: absolute;
+    top: 379px;
+    left: 0;
+    width: 391px;
+    min-height: 756px;
+    padding: 40px 38px 34px 41px;
+    background: #e5e5e5;
+    border-radius: 0 27px 27px 0;
+    z-index: 1;
+}
+
+.pill {
+    display: table;
+    padding: 10px 23px;
+    margin-bottom: 28px;
+    border-radius: 30px;
+    background: #707070;
+    color: white;
+    font-size: 23px;
+    font-weight: bold;
+}
+
+.personal-item {
+    margin-left: 34px;
+    margin-bottom: 14px;
+}
+
+.personal-item h3 {
+    font-size: 19px;
+    font-weight: bold;
+    line-height: 1.35;
+}
+
+.personal-item p {
+    font-size: 19px;
+    line-height: 1.35;
+}
+
+/* Kontak */
+.contact-section {
+    margin-top: 26px;
+}
+
+.contact-section .pill {
+    margin-bottom: 21px;
+}
+
+.contact-line {
+    margin: 0 0 23px 34px;
+    font-size: 16px;
+    white-space: nowrap;
+}
+
+/* Sosial media */
+.social-section {
+    margin-top: 26px;
+}
+
+.social-section .pill {
+    margin-bottom: 24px;
+}
+
+.social-handle {
+    margin-left: 34px;
+    font-size: 17px;
+}
+
+/* Kolom kanan */
+.main-content {
+    position: absolute;
+    top: 314px;
+    left: 451px;
+    width: 470px;
+    padding-bottom: 180px;
+    z-index: 1;
+}
+
+.content-section {
+    margin-bottom: 48px;
+}
+
+.content-section h2 {
+    font-size: 22px;
+    font-weight: 800;
+    line-height: 1.35;
+}
+
+/* Garis pembatas judul */
+.rule {
+    width: 100%;
+    height: 1.5px;
+    margin: 12px 0 17px;
+    background: #222222;
+}
+
+/* Tentang saya */
+.content-section > p,
+.about p {
+    font-size: 16.5px;
+    line-height: 1.4;
+    text-align: justify;
+}
+
+/* Pendidikan */
+.education {
+    margin-bottom: 8px;
+}
+
+.timeline-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    gap: 12px;
+    margin-bottom: 18px;
+    font-size: 15px;
+    white-space: nowrap;
+}
+
+.timeline-row strong {
+    font-weight: bold;
+}
+
+.timeline-row span {
+    flex-shrink: 0;
+    font-size: 15px;
+}
+
+/* Pengalaman organisasi */
+.organization {
+    margin-bottom: 48px;
+}
+
+.short-rule {
+    width: 86%;
+    margin-top: 50px;
+    margin-bottom: 8px;
+}
+
+.experience {
+    margin-bottom: 13px;
+}
+
+.experience h3 {
+    margin: 0 0 6px 5px;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.experience p {
+    margin-bottom: 3px;
+    font-size: 15.5px;
+    line-height: 1.45;
+}
+
+/* Kemampuan */
+.skills .rule {
+    margin-bottom: 17px;
+}
+
+.skills {
+    list-style: none;
+    padding: 0;
+}
+
+.skills li {
+    margin-bottom: 8px;
+    font-size: 16px;
+    font-weight: bold;
+    line-height: 1.35;
+}
+
+/* Dekorasi gelombang bawah */
+.bottom-waves {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 190px;
+    overflow: hidden;
+    z-index: 0;
+}
+
+.wave-gray,
+.wave-dark,
+.wave-black {
+    position: absolute;
+    width: 120%;
+    height: 190px;
+    border-radius: 50% 50% 0 0 / 45% 45% 0 0;
+}
+
+.wave-gray {
+    bottom: 16px;
+    left: -7%;
+    background: #aaaaaa;
+    transform: rotate(-5deg);
+}
+
+.wave-dark {
+    bottom: -12px;
+    left: 10%;
+    background: #555555;
+    transform: rotate(4deg);
+}
+
+.wave-black {
+    bottom: -74px;
+    left: -18%;
+    width: 100%;
+    background: #000000;
+    transform: rotate(8deg);
+}
+
+/* Garis gelombang di bagian atas */
+.top-lines {
+    position: absolute;
+    top: -42px;
+    right: -74px;
+    width: 245px;
+    height: 560px;
+    border: 1px solid #777777;
+    border-radius: 48% 0 0 48%;
+    transform: rotate(-20deg);
+    z-index: 0;
+}
+
+.top-lines::before,
+.top-lines::after {
+    content: "";
+    position: absolute;
+    inset: 12px;
+    border: 1px solid #777777;
+    border-radius: inherit;
+}
+
+.top-lines::after {
+    inset: 24px;
+}
+
+/* Tampilan responsif */
+@media (max-width: 1080px) {
+    body {
+        padding: 12px;
+    }
+
+    .resume {
+        width: 100%;
+        min-height: 0;
+        aspect-ratio: 1024 / 1448;
+        margin: 0 auto;
+    }
+
+    .top-shape {
+        width: 94%;
+        height: 20.7%;
+    }
+
+    .hero {
+        height: 23.8%;
+    }
+
+    .portrait {
+        top: 3.3%;
+        left: 6%;
+        width: 30%;
+        height: auto;
+        aspect-ratio: 1 / 1;
+    }
+
+    .hero-title {
+        top: 5.2%;
+        left: 38.5%;
+        width: 58%;
+    }
+
+    .hero-title h1 {
+        font-size: clamp(16px, 4.5vw, 46px);
+    }
+
+    .hero-title p {
+        font-size: clamp(9px, 2.65vw, 27px);
+        letter-spacing: 0.55vw;
+    }
+
+    .sidebar {
+        top: 26.2%;
+        width: 38.2%;
+        min-height: 52.2%;
+        padding: 3.8% 3.5%;
+    }
+
+    .pill {
+        font-size: clamp(10px, 2.25vw, 23px);
+        padding: 1.1vw 2.2vw;
+        margin-bottom: 2.7vw;
+    }
+
+    .personal-item {
+        margin-left: 3.2vw;
+        margin-bottom: 1.4vw;
+    }
+
+    .personal-item h3,
+    .personal-item p {
+        font-size: clamp(8px, 1.86vw, 19px);
+    }
+
+    .contact-line {
+        margin-left: 2.5vw;
+        margin-bottom: 2.2vw;
+        font-size: clamp(7px, 1.56vw, 16px);
+    }
+
+    .social-handle {
+        margin-left: 3.2vw;
+        font-size: clamp(8px, 1.66vw, 17px);
+    }
+
+    .main-content {
+        top: 21.7%;
+        left: 44%;
+        width: 45.9%;
+    }
+
+    .content-section {
+        margin-bottom: 4.7vw;
+    }
+
+    .content-section h2 {
+        font-size: clamp(10px, 2.15vw, 22px);
+    }
+
+    .rule {
+        margin: 1.2vw 0 1.7vw;
+    }
+
+    .about p {
+        font-size: clamp(8px, 1.62vw, 16.5px);
+    }
+
+    .timeline-row {
+        gap: 1vw;
+        margin-bottom: 1.7vw;
+        font-size: clamp(7px, 1.47vw, 15px);
+    }
+
+    .timeline-row span {
+        font-size: clamp(7px, 1.47vw, 15px);
+    }
+
+    .short-rule {
+        margin-top: 4.8vw;
+        margin-bottom: 0.8vw;
+    }
+
+    .experience h3 {
+        font-size: clamp(8px, 1.56vw, 16px);
+    }
+
+    .experience p {
+        font-size: clamp(7px, 1.52vw, 15.5px);
+    }
+
+    .skills li {
+        font-size: clamp(8px, 1.56vw, 16px);
+    }
+
+    .bottom-waves {
+        height: 13.1%;
+    }
+}
+
+/* Pengaturan cetak A4 */
+@media print {
+    @page {
+        size: A4 portrait;
+        margin: 0;
+    }
+
+    html,
+    body {
+        width: 210mm;
+        height: 297mm;
+        margin: 0;
+        padding: 0;
+        background: white;
+    }
+
+    .resume {
+        width: 210mm;
+        height: 297mm;
+        min-height: 0;
+        margin: 0;
+        box-shadow: none;
+        print-color-adjust: exact;
+        -webkit-print-color-adjust: exact;
+    }
+}
